@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="orderstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Order Now</title>
+</head>
+<body>
+    <section id="Home">
+        <nav>
+            <div class="logo">
+                <img src="./Assets/logo.png" alt="Logo">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="#Menu">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="#Review">Review</a></li>
+                <li><a href="order.html" target="_blank">Order</a></li>
+            </ul>
+            <div class="icon">
+                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </nav>
+        <br/> <br/> <br/> 
+        <main>
+            <div class="order-container">
+                <h2>Place Your Order</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Address:</label>
+                    <input type="address" id="address" name="address" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="burger-type">Choose your burger:</label>
+                    <select id="burger-type" name="burger-type">
+                        <option value="classic">Classic Burger - $5.99</option>
+                        <option value="cheese">Cheeseburger - $6.99</option>
+                        <option value="bacon">Bacon Burger - $7.99</option>
+                    </select>
+
+                    <label for="extras">Extras:</label>
+                    <div class="extras">
+                        <input type="checkbox" id="fries" name="extras" value="fries">
+                        <label for="fries">Fries - $1.99</label>
+                    
+                        <input type="checkbox" id="drink" name="extras" value="drink">
+                        <label for="drink">Drink - $1.99</label>
+                    </div>
+
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments" rows="4"></textarea>
+
+                    <button type="submit" class="order-btn">Order Now</button>
+                </form>
+            </div>
+        </main>
+    </section>
+</body>
+</html>
